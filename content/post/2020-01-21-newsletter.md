@@ -95,4 +95,4 @@ That's it for this week.
 
 Are there any topics or concepts you'd like me to write more about? Send any suggestions to [hp@houstonp.com](mailto:hp@houstonp.com).
 
-Thanks everyone who sent me links and recommendations this week. If you stumble across something interesting, send it my way! You can send any recommendations to [links@houstonp.com](mailto:links@houstonp.com). If you haven't done so yet, [subscribe](https://blog.houstonp.com/subscribe) to get all my posts delivered directly to your email.
+Thanks everyone who sent me links and recommendations this week. If you stumble across something interesting, send it my way! You can send any recommendations to [links@houstonp.com](mailto:links@houstonp.com).
