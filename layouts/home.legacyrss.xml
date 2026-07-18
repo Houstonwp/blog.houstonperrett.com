@@ -1,0 +1,1 @@
+{{- partial "rss.xml" (dict "page" . "format" (.OutputFormats.Get "LegacyRSS")) -}}

@@ -7,7 +7,7 @@ tags: ["newsletter"]
 ## Updates
 Are there any topics or concepts you'd like me to write more about? Send any suggestions to [hp@houstonp.com](mailto:hp@houstonp.com).
 
-Are you finding value in this blog? Be sure to share it with others who might as well. If you haven't done so yet, [subscribe](https://blog.houstonp.com/subscribe) to get all my posts delivered directly to your email.
+Are you finding value in this blog? Be sure to share it with others who might as well.
 
 Thanks everyone who sent me links and recommendations this week. If you stumble across something interesting, send it my way! You can send any recommendations to [links@houstonp.com](mailto:links@houstonp.com).
 

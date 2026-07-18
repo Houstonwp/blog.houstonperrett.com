@@ -1,0 +1,5 @@
+# Redirect the legacy domain once its DNS alias points to Netlify.
+https://blog.houstonperrett.com/* https://blog.houstonp.com/:splat 301!
+
+# Preserve old subscription links without retaining the signup service.
+/subscribe / 301!

@@ -84,7 +84,7 @@ Vladimir Vapnik: Statistical Learning
 
 [François Chollet on the mislabeling of "artificial intelligence"](https://mobile.twitter.com/fchollet/status/1214392496375025664) - I wish anyone talking about "artificial intelligence" would read this. 
 
-{{< tweet 1214392496375025664 >}}
+{{< x user="fchollet" id="1214392496375025664" >}}
 
 [The End of the Beginning](https://stratechery.com/2020/the-end-of-the-beginning/) - I would have never thought of relating the current state of the tech industry to the automotive industry. Ben brings up interesting parallels between the two.
 
@@ -113,4 +113,4 @@ That's it for this week.
 
 Are there any topics or concepts you'd like me to write more about? Send any suggestions to [hp@houstonp.com](mailto:hp@houstonp.com).
 
-Thanks everyone who sent me links and recommendations this week. If you stumble across something interesting, send it my way! You can send any recommendations to [links@houstonp.com](mailto:links@houstonp.com). If you haven't done so yet, [subscribe](https://blog.houstonp.com/subscribe) to get all my posts delivered directly to your email.
+Thanks everyone who sent me links and recommendations this week. If you stumble across something interesting, send it my way! You can send any recommendations to [links@houstonp.com](mailto:links@houstonp.com).

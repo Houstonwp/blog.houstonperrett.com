@@ -1,0 +1,34 @@
+{{- $page := .page -}}
+{{- $format := .format -}}
+{{- $pctx := $page -}}
+{{- if $page.IsHome -}}{{ $pctx = $page.Site }}{{- end -}}
+{{- $pages := $pctx.RegularPages -}}
+{{- $limit := $page.Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ if eq $page.Title $page.Site.Title }}{{ $page.Site.Title }}{{ else }}{{ with $page.Title }}{{ . }} on {{ end }}{{ $page.Site.Title }}{{ end }}</title>
+    <link>{{ $format.Permalink }}</link>
+    <description>Recent content {{ if ne $page.Title $page.Site.Title }}{{ with $page.Title }}in {{ . }} {{ end }}{{ end }}on {{ $page.Site.Title }}</description>
+    <generator>Hugo -- gohugo.io</generator>{{ with $page.Site.Language.Locale }}
+    <language>{{ . }}</language>{{ end }}{{ with $page.Site.Params.author.email }}
+    <managingEditor>{{ . }}{{ with $page.Site.Params.author.name }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $page.Site.Params.author.email }}
+    <webMaster>{{ . }}{{ with $page.Site.Params.author.name }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with $page.Site.Copyright }}
+    <copyright>{{ . }}</copyright>{{ end }}{{ if not $page.Date.IsZero }}
+    <lastBuildDate>{{ $page.Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" $format.Permalink $format.MediaType.Type | safeHTML }}
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{ with .Site.Params.author.email }}<author>{{ . }}{{ with $page.Site.Params.author.name }} ({{ . }}){{ end }}</author>{{ end }}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Summary | html }}</description>
+    </item>
+    {{ end }}
+  </channel>
+</rss>

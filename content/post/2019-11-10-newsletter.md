@@ -6,8 +6,6 @@ tags: ["newsletter"]
 
 ## Updates
 
-I was asked this week if I could add a subscribe button so people could get my posts delivered directly to their inbox. I added this early in the week. If you also want to get it delivered to your inbox, click the subscribe button.
-
 If you stumble across something interesting, send it my way! You can send any recommendations to [links@houstonp.com](mailto:links@houstonp.com).
 
 <!--more-->

@@ -1,31 +1,31 @@
-baseurl = "/"
+baseURL = "https://blog.houstonp.com/"
 DefaultContentLanguage = "en"
 title = "Houston Perrett"
-theme = "beautifulhugo"
-metaDataFormat = "toml"
-pygmentsUseClasses = true
-pygmentCodeFences = true
-googleAnalytics = "UA-67480960-1"
+
+[[module.imports]]
+  path = "github.com/halogenica/beautifulhugo"
 
 [services.rss]
   limit = 1
 
 [Params]
   subtitle = "Thoughts on actuarial, insurance, technology, and society."
- # logo = "img/avatar-icon.png"
+  # logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   comments = false
   readingTime = false
+  mathEngine = "mathjax"
+  selfHosted = true
 
-[Author]
+[Params.author]
   name = "Houston Perrett"
   website = "https://houstonp.com"
   email = "hp@houstonp.com"
   github = "houstonwp"
   twitter = "HoustonPerrett"
-  linkedin = "HoustonPerrett"
+  linkedin = "https://linkedin.com/in/HoustonPerrett"
 
 [[menu.main]]
     name = "Blog"
@@ -47,16 +47,24 @@ googleAnalytics = "UA-67480960-1"
     url = "tags"
     weight = 3
 
-[[menu.main]]
-    name = "Subscribe"
-    url = "subscribe"
-    weight = 4
-
 [outputs]
-home = [ "RSS", "HTML"]
+home = ["HTML", "RSS", "LegacyRSS"]
 section  = ["HTML"]
 
 [outputFormats]
 [outputFormats.RSS]
-mediatype = "application/rss"
+mediaType = "application/rss+xml"
+baseName = "index"
+
+[outputFormats.LegacyRSS]
+mediaType = "application/rss+xml"
 baseName = "rss"
+isPlainText = true
+noUgly = true
+notAlternative = true
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark.renderer]
+  unsafe = true
