@@ -16,13 +16,13 @@ I've been contemplating publishing a newsletter for some time now. I started sha
 
 Some notable quotes:
 
-![When you treat people like children](images/rework_1.jpg)
+![When you treat people like children](/images/rework_1.JPG)
 
-![The most common excuse](images/rework_2.jpg)
+![The most common excuse](/images/rework_2.JPG)
 
-![The worst interruptions](images/rework_3.jpg)
+![The worst interruptions](/images/rework_3.JPG)
 
-![But what if](images/rework_4.jpg)
+![But what if](/images/rework_4.JPG)
 
 [Zero to One by Peter Thiel](https://smile.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296) - Another book on startups. Peter knows what he's talking about. Of all the books I've read on startups, this is one of the best.
 

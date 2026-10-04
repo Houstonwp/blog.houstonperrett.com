@@ -2,3 +2,6 @@
 .netlify/
 public/
 resources/_gen/
+/test-results/
+__pycache__/
+*.pyc
